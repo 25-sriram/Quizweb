@@ -1,0 +1,151 @@
+:root {
+    --neon-pink: #ff0055;
+    --neon-yellow: #ffcc00;
+    --dark-bg: #1a0210;
+    --card-bg: rgba(45, 5, 30, 0.9);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #1a0210;
+    background-image: radial-gradient(circle, #3d0525 0%, #000 100%);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.quiz-wrapper {
+    width: 95%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.progress-box {
+    border: 2px solid #ff0055;
+    display: inline-block;
+    padding: 5px 15px;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+    margin-bottom: 20px;
+    background: rgba(255, 0, 85, 0.2);
+}
+
+.question-box {
+    background: rgba(45, 5, 30, 0.9);
+    border: 2px solid #ff0055;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.3);
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.option-btn {
+    background: rgba(255, 204, 0, 0.1);
+    border: 1px solid #ffcc00;
+    color: #ffcc00;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-align: left;
+    cursor: pointer;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    transition: 0.3s;
+}
+
+.option-btn:hover,
+.option-btn.selected {
+    background: #ffcc00;
+    color: black;
+    box-shadow: 0 0 15px #ffcc00;
+}
+
+#next-btn {
+    margin-top: 30px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+}
+
+#result-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(20, 0, 15, 0.95);
+    padding: 50px;
+    border: 2px solid #ff0055;
+    box-shadow: 0 0 40px rgba(255, 0, 85, 0.2);
+    min-width: 300px;
+}
+
+.glitch-text {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.score-label {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.big-score {
+    font-size: 100px;
+    font-weight: 900;
+    color: #ffcc00;
+    text-shadow: 0 0 20px #ffcc00;
+    margin: 10px 0 30px 0;
+}
+
+.sci-fi-btn {
+    background: #2a051a;
+    color: #ffcc00;
+    border: 1px solid #ffcc00;
+    padding: 12px 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    transition: 0.3s ease;
+}
+
+.btn-prefix {
+    color: #ff0055;
+    margin-right: 10px;
+}
+
+.sci-fi-btn:hover {
+    background: #ffcc00;;
+    color: black;
+    transform: translateX(5px);
+}
+
+
+@media (max-width: 600px) {
+    .options-container {
+        grid-template-columns: 1fr;
+    }
+
+    .big-score {
+        font-size: 70px;
+    }
+}

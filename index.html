@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camila</title>
+    <link rel = "icon" href = "logo.png">
+</head>
+<style>
+    body {
+        background-color: #1a0210;
+        background-image: radial-gradient(circle, #3d0525 0%, #000 100%);
+        color: white;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        justify-content: center; 
+        text-align: center;
+        gap: 30px;        
+        width: 100%;        
+    }
+
+    .container img {
+        max-width: 80%;    
+        height: auto;
+        margin-bottom: 10px;    
+    }
+
+    button {
+        background: #2a051a;
+        color: #ffcc00;
+        border: 1px solid #ffcc00;
+        padding: 12px 40px;
+        font-size: 1.2rem;  
+        cursor: pointer;
+        clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+        transition: 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    button:hover {
+        background: #ffcc00;
+        color: black;
+        transform: translateX(5px);
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <img src="camila.png" alt="logo">
+
+        <button onclick="location.href='quiz.html'" class="start-btn">START QUIZ</button>
+    </div>
+
+</body>
+
+</html>

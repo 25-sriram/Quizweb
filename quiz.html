@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camila</title>
+    <link rel="stylesheet" href="styel.css">
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+    <div class="quiz-wrapper">
+        <div class="progress-box"><span id="curr">01</span>/10</div>
+
+        <div id="quiz-container">
+            <div class="question-box">
+                <h2 id="question-text">Question loading...</h2>
+            </div>
+
+            <div id="options-grid" class="options-container">
+            </div>
+
+            <div class="footer">
+                <button id="next-btn" class="hidden">Next Question</button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h1 class="glitch-text">QUIZ COMPLETE</h1>
+            <div class="final-score-container">
+                <span class="score-label">ACCURACY RATING</span>
+                <div id="final-score" class="big-score">0/10</div>
+            </div>
+            <div class="reboot-wrapper">
+                <button id="re-attempt-btn" class="sci-fi-btn">
+                    <span class="btn-prefix">R</span> REBOOT QUIZ
+                </button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
